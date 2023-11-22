@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import SearchButton from './SearchButton';
+import WeatherDiscription from './WeatherDiscription';
+import WeekDaysWeather from './WeekDaysWeather';
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <div className='App'>
+      <div className='container'>
+        <div className='card shadow mt-5'>
+          <SearchButton />
+          <WeatherDiscription />
+          <WeekDaysWeather />
+        </div>
+        <a href='https://github.com/somayehkhanbabaei/weather_app'>
+          Go to Github
         </a>
-      </header>
+      </div>
     </div>
   );
 }
